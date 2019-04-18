@@ -1,0 +1,82 @@
+{
+  "accessLevels": [
+    "admin",
+    "guest",
+    "user",
+    "1",
+    "2"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "test2",
+      "lastName": "Ivanov",
+      "balance": "234",
+      "accessLevel": "admin"
+    },
+    {
+      "id": 2,
+      "isActive": true,
+      "balance": "$2,767.25",
+      "picture": "http://placehold.it/128x128",
+      "age": 22,
+      "accessLevel": "",
+      "firstName": "Vicky123",
+      "lastName": "Carter",
+      "company": "KIOSK",
+      "email": "vicky.carter@kiosk.biz",
+      "phone": "+7 (813) 477-3318",
+      "address": "964 Moore Place, Cutter, Illinois, 3074",
+      "about": "Ad non deserunt non labore labore cillum mollit enim. Cillum in do tempor id duis do. Culpa ut aliqua dolor velit aute laborum magna ea incididunt ad id. Magna duis ullamco laborum in. Dolore laborum quis sit tempor dolor officia esse adipisicing non quis quis nisi consequat anim. Ea et duis exercitation nisi proident reprehenderit irure esse cillum ipsum exercitation aliquip.",
+      "registered": "14.05.2016"
+    },
+    {
+      "id": 3,
+      "isActive": false,
+      "balance": "$3,700.95",
+      "picture": "http://placehold.it/128x128",
+      "age": 32,
+      "accessLevel": "2",
+      "firstName": "Christina",
+      "lastName": "Walters",
+      "company": "SUNCLIPSE",
+      "email": "christina.walters@sunclipse.com",
+      "phone": "+7 (872) 587-3327",
+      "address": "114 Langham Street, Romeville, North Carolina, 5769",
+      "about": "Velit deserunt excepteur eu ea minim sit dolore irure est. Exercitation officia do aliqua enim pariatur reprehenderit ex magna magna culpa veniam proident veniam. Qui ut excepteur quis nisi ea deserunt minim velit et. Voluptate ex irure ipsum incididunt ullamco amet Lorem magna. Aliquip Lorem nostrud aute sit mollit deserunt cupidatat qui dolor in ullamco in exercitation. Cupidatat aliqua aliqua culpa ex aliquip laboris dolore officia pariatur. Commodo aliquip fugiat non Lorem adipisicing amet mollit reprehenderit laboris.",
+      "registered": "22.02.2017"
+    },
+    {
+      "id": 4,
+      "isActive": true,
+      "balance": "$1,117.28",
+      "picture": "http://placehold.it/128x128",
+      "age": 20,
+      "accessLevel": "2",
+      "firstName": "Valencia1234",
+      "lastName": "Reeves",
+      "company": "INFOTRIPS",
+      "email": "valencia.reeves@infotrips.me",
+      "phone": "+7 (998) 587-3372",
+      "address": "214 Morton Street, Trinway, Maryland, 956",
+      "about": "Laborum cillum adipisicing ad consectetur aute consectetur aliqua eiusmod nulla sint mollit excepteur ut. Aute tempor nostrud ex sit aute sunt dolor tempor in excepteur. Ut enim ut reprehenderit aute minim voluptate nostrud sit laborum anim aliqua nulla duis exercitation. Dolore esse nisi velit velit laboris duis duis aute irure ea sunt aute mollit sint. Non ullamco veniam commodo Lorem sint nulla adipisicing eu sint.",
+      "registered": "12.11.2018"
+    },
+    {
+      "id": 5,
+      "isActive": false,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "",
+      "firstName": "324234",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": ""
+    }
+  ]
+}
