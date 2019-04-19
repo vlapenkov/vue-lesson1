@@ -28,7 +28,6 @@ export default {
     };
   },
   props: {
-    // Объект с данными пользователя
     value: {
       type: String,
       required: true
@@ -46,8 +45,6 @@ export default {
     },
     selectDate(newDate) {
       this.localValue = moment(newDate).format("DD.MM.YYYY");
-
-      // console.log(this.parseDate(newDate));
     }
   },
   created: function() {

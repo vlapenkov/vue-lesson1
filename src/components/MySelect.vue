@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <option value="10">10</option>-->
     <label>Кол-во эл-тов</label>
     <select v-model="countPerPageValue">
       <option v-for="option in countPerPageArray" :value="option" :key="option">
@@ -39,5 +38,3 @@ export default {
   }
 };
 </script>
-
-<style></style>
