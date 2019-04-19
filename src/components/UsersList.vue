@@ -38,7 +38,8 @@
         </tr>
       </tfoot>
     </table>
-    <my-select v-model="countPerPage"
+    <my-select
+      v-model="countPerPage"
       :countPerPageArray="[5, 10, 50, 100]"
     ></my-select>
     <my-paginator

@@ -15,7 +15,7 @@
 <script>
 import Datepicker from "vuejs-datepicker";
 import { ru } from "vuejs-datepicker/dist/locale";
-import axios from "axios";
+
 import moment from "moment";
 export default {
   components: { Datepicker },

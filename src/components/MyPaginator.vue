@@ -1,7 +1,6 @@
 <template>
   <nav aria-label="Page navigation example">
     <ul class="pagination">
-
       <li
         v-for="(item, index) in numOfButtons"
         :key="item.index"
@@ -14,7 +13,6 @@
           >{{ index + 1 }}</a
         >
       </li>
-
     </ul>
   </nav>
 </template>
