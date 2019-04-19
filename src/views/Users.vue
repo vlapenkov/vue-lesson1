@@ -1,16 +1,11 @@
-
 <template>
-
-<div v-if="usersList.length">
-<users-list
-
-      :userslist="usersList" v-on:removeuser="removeUser"/>
-</div>
-     <div v-else>
-  Loading...
-</div>
+  <div v-if="usersList.length">
+    <users-list :userslist="usersList" v-on:removeuser="removeUser" />
+  </div>
+  <div v-else>
+    Loading...
+  </div>
 </template>
-
 
 <script>
 /* eslint-disable */

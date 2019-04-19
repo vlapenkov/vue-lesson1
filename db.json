@@ -28,7 +28,7 @@
       "phone": "+7 (813) 477-3318",
       "address": "964 Moore Place, Cutter, Illinois, 3074",
       "about": "Ad non deserunt non labore labore cillum mollit enim. Cillum in do tempor id duis do. Culpa ut aliqua dolor velit aute laborum magna ea incididunt ad id. Magna duis ullamco laborum in. Dolore laborum quis sit tempor dolor officia esse adipisicing non quis quis nisi consequat anim. Ea et duis exercitation nisi proident reprehenderit irure esse cillum ipsum exercitation aliquip.",
-      "registered": "14.05.2016"
+      "registered": "23.06.2016"
     },
     {
       "id": 3,
@@ -44,7 +44,7 @@
       "phone": "+7 (872) 587-3327",
       "address": "114 Langham Street, Romeville, North Carolina, 5769",
       "about": "Velit deserunt excepteur eu ea minim sit dolore irure est. Exercitation officia do aliqua enim pariatur reprehenderit ex magna magna culpa veniam proident veniam. Qui ut excepteur quis nisi ea deserunt minim velit et. Voluptate ex irure ipsum incididunt ullamco amet Lorem magna. Aliquip Lorem nostrud aute sit mollit deserunt cupidatat qui dolor in ullamco in exercitation. Cupidatat aliqua aliqua culpa ex aliquip laboris dolore officia pariatur. Commodo aliquip fugiat non Lorem adipisicing amet mollit reprehenderit laboris.",
-      "registered": "22.02.2017"
+      "registered": "28.02.2017"
     },
     {
       "id": 4,
@@ -69,14 +69,78 @@
       "picture": "",
       "age": 0,
       "accessLevel": "",
-      "firstName": "324234",
+      "firstName": "test55",
       "lastName": "",
       "company": "",
       "email": "",
       "phone": "",
       "address": "",
       "about": "",
-      "registered": ""
+      "registered": "19.04.2019"
+    },
+    {
+      "id": 6,
+      "isActive": false,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "",
+      "firstName": "Тест5",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "11.04.2019"
+    },
+    {
+      "id": 7,
+      "isActive": false,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "",
+      "firstName": "Тест6",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "18.04.2019"
+    },
+    {
+      "id": 8,
+      "isActive": false,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "",
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "19.04.2019"
+    },
+    {
+      "id": 9,
+      "isActive": true,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "admin",
+      "firstName": "Петр",
+      "lastName": "Петров",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "11.04.2019"
     }
   ]
 }

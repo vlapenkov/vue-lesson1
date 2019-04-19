@@ -6,9 +6,10 @@
       Загрузка...
     </div>
 
-       <user-form v-else :user="user" @input="value => (user = value)" />
-<hr/>
- <button type="button" class="btn btn-primary" @click="save">Save</button>
+    <!--<user-form v-else :user="user" @input="value => (user = value)" /> -->
+    <user-form v-else v-model="user" />
+    <hr />
+    <button type="button" class="btn btn-primary" @click="save">Save</button>
     <pre>{{ user }}</pre>
   </div>
 </template>
@@ -52,10 +53,11 @@ export default {
     loadData: function() {
       this.user = Object.assign({}, emptyObj);
     },
-    save:function()
-    {
-      axios.post('http://localhost:3004/users/',this.user).then(response=>{console.log(response); this.$router.push("/users");})
-
+    save: function() {
+      axios.post("http://localhost:3004/users/", this.user).then(response => {
+        console.log(response);
+        this.$router.push("/users");
+      });
     }
   }
 };
