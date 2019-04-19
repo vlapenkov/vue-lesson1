@@ -15,7 +15,6 @@
         </tr>
       </thead>
       <tbody>
-        <!--(selectedPage-1)*countPerPage,countPerPage)-->
         <tr v-for="item in listOnPage" :key="item.id">
           <td>
             <router-link :to="'/edit/' + item.id">
