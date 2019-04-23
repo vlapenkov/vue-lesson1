@@ -1,17 +1,24 @@
 <template>
   <nav aria-label="Page navigation example">
+    <div>Active page is {{ activePage }}</div>
     <ul class="pagination">
-      <li
-        v-for="(item, index) in numOfButtons"
-        :key="item.index"
-        class="page-item"
-      >
+      <li class="page-item" :class="{ disabled: activePage === 1 }">
         <a
-          class="page-link active"
-          href="javascript:void(0);"
-          @click="setPage(index + 1)"
-          >{{ index + 1 }}</a
+          href="#"
+          class="page-link"
+          aria-label="Previous"
+          @click.prevent="prevPage"
         >
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li
+        v-for="item of numOfButtons"
+        :key="item"
+        class="page-item"
+        :class="{ active: activePage === item }"
+      >
+        <a class="page-link" @click="setPage(item)">{{ item }}</a>
       </li>
     </ul>
   </nav>
@@ -28,16 +35,40 @@ export default {
     countPerPage: {
       type: Number,
       required: true
+    },
+    activePage: {
+      type: Number,
+      required: true
     }
   },
+  /*watch:{ countPerPage()
+  {
+    this.setPage(1);
+  }}, */
   computed: {
     numOfButtons: function() {
       return Math.ceil(this.total / this.countPerPage);
     }
   },
   methods: {
-    setPage: function(pageNumber) {
+    setPage(pageNumber) {
+      //  this.activePage=pageNumber;
+      console.log("active page ", pageNumber);
       this.$emit("input", pageNumber);
+    },
+    // Предыдущая страница
+    prevPage() {
+      const pageNum = this.activePage - 1;
+      if (pageNum > 0) {
+        this.setPage(pageNum);
+      }
+    },
+    // Следующая страница
+    nextPage() {
+      const pageNum = this.activePage + 1;
+      if (pageNum <= this.total) {
+        this.setPage(pageNum);
+      }
     }
   }
 };

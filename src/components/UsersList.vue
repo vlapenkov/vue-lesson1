@@ -28,7 +28,7 @@
           <td>{{ item.email }}</td>
           <td>{{ item.phone }}</td>
           <td>{{ item.registered }}</td>
-          <td><button @click="removeUser(item.id)">X</button></td>
+          <td><button type="button" @click="removeUser(item.id)">X</button></td>
         </tr>
       </tbody>
       <tfoot>
@@ -38,13 +38,14 @@
       </tfoot>
     </table>
     <my-select
-      v-model="countPerPage"
+      v-model.number="countPerPage"
       :countPerPageArray="[5, 10, 50, 100]"
     ></my-select>
     <my-paginator
       :total="userslist.length"
       :countPerPage="countPerPage"
-      @input="value => (selectedPage = value)"
+      :activePage="activePage"
+      @input="value => (activePage = value)"
     ></my-paginator>
   </div>
 </template>
@@ -56,7 +57,7 @@ import MySelect from "@/components/MySelect.vue";
 export default {
   name: "users-list",
   data: function() {
-    return { countPerPage: 5, selectedPage: 1 };
+    return { countPerPage: 10, activePage: 1 };
   },
   components: { MyPaginator, MySelect },
   props: {
@@ -72,8 +73,8 @@ export default {
     },
     listOnPage: function() {
       return this.userslist.slice(
-        (this.selectedPage - 1) * this.countPerPage,
-        this.selectedPage * this.countPerPage
+        (this.activePage - 1) * this.countPerPage,
+        this.activePage * this.countPerPage
       );
     }
   },

@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Users from "./views/Users.vue";
 import AddUser from "./views/AddUser.vue";
 import EditUser from "./views/Edit.vue";
+import Producers from "./views/Producers";
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: "/users",
       name: "users",
       component: Users
+    },
+    {
+      path: "/producers",
+      name: "producers",
+      component: Producers
     },
     {
       path: "/add",

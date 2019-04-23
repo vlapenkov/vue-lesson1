@@ -42,10 +42,13 @@ export default {
   },
   methods: {
     save: function() {
-      axios.put(this.url, this.user).then(response => {
-        console.log(response);
-        this.$router.push("/users");
-      });
+      axios
+        .put(this.url, this.user)
+        .then(response => {
+          console.log(response);
+          this.$router.push("/users");
+        })
+        .catch(console.error);
     },
     loadData: function() {
       axios.get(this.url).then(({ data }) => {

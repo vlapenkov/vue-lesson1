@@ -34,6 +34,9 @@
           <router-link tag="li" to="/add" exact active-class="active">
             <a class="nav-link" href="#">Добавить пользователя</a>
           </router-link>
+          <router-link tag="li" to="/producers" exact active-class="active">
+            <a class="nav-link" href="#">Производители</a>
+          </router-link>
         </ul>
       </div>
     </nav>

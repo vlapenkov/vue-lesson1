@@ -57,7 +57,8 @@
 
     <div class="form-group">
       <label>Компания</label>
-      <input type="text" class="form-control" v-model="localUser.company" />
+      <!-- <input type="text" class="form-control" v-model="localUser.company" /> -->
+      <rich-editor v-model="localUser.company" />
     </div>
     <div></div>
   </div>
@@ -67,11 +68,13 @@
 import { ru } from "vuejs-datepicker/dist/locale";
 import axios from "axios";
 import MyPicker from "@/components/MyPicker.vue";
+import RichEditor from "@/components/RichEditor.vue";
 
 export default {
   name: "user-form",
   components: {
-    MyPicker
+    MyPicker,
+    RichEditor
   },
   props: {
     // Объект с данными пользователя

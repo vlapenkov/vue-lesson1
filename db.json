@@ -39,7 +39,7 @@
       "accessLevel": "2",
       "firstName": "Christina",
       "lastName": "Walters",
-      "company": "SUNCLIPSE",
+      "company": "<p>SUNCLIPSE <strong>45 </strong></p><p><br></p><p class=\"ql-align-center\"><strong>вапвап</strong></p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><strong>вап</strong></p>",
       "email": "christina.walters@sunclipse.com",
       "phone": "+7 (872) 587-3327",
       "address": "114 Langham Street, Romeville, North Carolina, 5769",
@@ -71,28 +71,12 @@
       "accessLevel": "",
       "firstName": "test55",
       "lastName": "",
-      "company": "",
+      "company": "<p>вап вапвап ва</p><ul data-checked=\"false\"><li>п </li></ul><p class=\"ql-align-center\">вап</p><p><strong>ва</strong></p><p><strong>п</strong></p><p><strong>вап вапвап</strong></p>",
       "email": "",
       "phone": "",
       "address": "",
       "about": "",
       "registered": "19.04.2019"
-    },
-    {
-      "id": 6,
-      "isActive": false,
-      "balance": "",
-      "picture": "",
-      "age": 0,
-      "accessLevel": "",
-      "firstName": "Тест5",
-      "lastName": "",
-      "company": "",
-      "email": "",
-      "phone": "",
-      "address": "",
-      "about": "",
-      "registered": "11.04.2019"
     },
     {
       "id": 7,
@@ -141,6 +125,22 @@
       "address": "",
       "about": "",
       "registered": "11.04.2019"
+    },
+    {
+      "id": 10,
+      "isActive": false,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "admin",
+      "firstName": "счпртапо",
+      "lastName": "",
+      "company": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "26.04.2019"
     }
   ]
 }
