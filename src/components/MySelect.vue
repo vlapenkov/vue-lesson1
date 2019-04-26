@@ -2,7 +2,9 @@
   <div>
     <label>Выводить по </label>
     <select @change="$emit('input', $event.target.value)" :value="value">
-      <option v-for="option in countPerPageArray" :value="option" :key="option">{{ option }}</option>
+      <option v-for="option in countPerPageArray" :value="option" :key="option">{{
+        option
+      }}</option>
     </select>
   </div>
 </template>

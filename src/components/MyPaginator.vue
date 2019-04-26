@@ -3,12 +3,7 @@
     <div>Active page is {{ activePage }}</div>
     <ul class="pagination">
       <li class="page-item" :class="{ disabled: activePage === 1 }">
-        <a
-          href="#"
-          class="page-link"
-          aria-label="First"
-          @click.prevent="setPage(1)"
-        >
+        <a href="#" class="page-link" aria-label="First" @click.prevent="setPage(1)">
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
@@ -22,12 +17,7 @@
         <a class="page-link" @click="setPage(item)">{{ item }}</a>
       </li>
       <li class="page-item" :class="{ disabled: activePage === numOfButtons }">
-        <a
-          href="#"
-          class="page-link"
-          aria-label="Last"
-          @click.prevent="setPage(numOfButtons)"
-        >
+        <a href="#" class="page-link" aria-label="Last" @click.prevent="setPage(numOfButtons)">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
@@ -60,9 +50,11 @@ export default {
     numOfButtons() {
       return Math.ceil(this.total / this.countPerPage);
     },
-    showCriteria()
-    {
-      return number => [1,this.numOfButtons,this.activePage,this.activePage-1,this.activePage+1].some(x=>x==number)
+    showCriteria() {
+      return number =>
+        [1, this.numOfButtons, this.activePage, this.activePage - 1, this.activePage + 1].some(
+          x => x == number
+        );
     }
   },
   methods: {
@@ -89,9 +81,8 @@ export default {
 };
 </script>
 <style>
-.page-item
-{
-  cursor:pointer;
+.page-item {
+  cursor: pointer;
 }
 </style>
 >

@@ -1,13 +1,24 @@
 <template>
   <form>
-
     <div class="form-group">
-    <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Search..."  v-model="localFilter.searchText">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="localFilter.searchText='';">X</button>
-  </div>
-</div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search..."
+          v-model="localFilter.searchText"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+            @click="localFilter.searchText = ''"
+          >
+            X
+          </button>
+        </div>
+      </div>
     </div>
     <div class="form-group">
       <div class="custom-control custom-checkbox">
@@ -16,7 +27,7 @@
           class="custom-control-input"
           id="active"
           v-model="localFilter.active"
-        >
+        />
         <label class="custom-control-label" for="active">Активность</label>
       </div>
     </div>

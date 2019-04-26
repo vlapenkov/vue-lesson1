@@ -2,7 +2,7 @@
   <section class="m-t-150">
     <h1>Компонент поиска по производителям</h1>
     {{ activePage }}
-    <my-search v-model="filter" @input="()=>getProducers(true)"/>
+    <my-search v-model="filter" @input="() => getProducers(true)" />
     <my-select
       :value="countPerPage"
       @input="value => updateCount(value)"
@@ -12,20 +12,20 @@
       :total="total"
       :countPerPage="countPerPage"
       :activePage="activePage"
-      @input="value=>updateActivePage(value)"
+      @input="value => updateActivePage(value)"
     ></my-paginator>
 
     <div v-if="!isLoading">
-      <producers-list :producers="producers" :total="total"/>
+      <producers-list :producers="producers" :total="total" />
     </div>
-    <div v-else-if="producers.length>0 " class="position-relative">
+    <div v-else-if="producers.length > 0" class="position-relative">
       <div class="position-absolute text-center" style="width:100%">
         <div class="position-relative spinner-border text-success" role="status">
           <span class="sr-only">Loading...</span>
         </div>
       </div>
       <div style="opacity:0.5">
-        <producers-list :producers="producers" :total="total"/>
+        <producers-list :producers="producers" :total="total" />
       </div>
     </div>
     <div v-else>

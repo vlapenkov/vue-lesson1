@@ -7,7 +7,7 @@
     </div>
     <!--<user-form v-else :value="user" @input="value => (user = value)" />-->
     <template v-else>
-      <user-form v-model="user" @errors="value => hasErrors = value" />
+      <user-form v-model="user" @errors="value => (hasErrors = value)" />
     </template>
     <hr />
     <button type="button" class="btn btn-primary" :disabled="hasErrors" @click="save">Save</button>
@@ -27,7 +27,7 @@ export default {
     return {
       // Пользователь
       user: null,
-      hasErrors:false
+      hasErrors: false
     };
   },
   computed: {

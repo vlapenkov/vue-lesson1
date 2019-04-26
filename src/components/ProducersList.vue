@@ -11,9 +11,7 @@
       <tbody>
         <tr v-for="item in producers" :key="item.producerId">
           <td>
-            <router-link :to="'/edit/' + item.producerId">
-              # {{ item.producerId }}
-            </router-link>
+            <router-link :to="'/edit/' + item.producerId"> # {{ item.producerId }} </router-link>
           </td>
           <td>{{ item.name }}</td>
           <td>{{ item.active }}</td>
@@ -25,8 +23,6 @@
         </tr>
       </tfoot>
     </table>
-
-
   </div>
 </template>
 
@@ -37,7 +33,7 @@
 
 export default {
   name: "producers-list",
- // components: { MyPaginator, MySelect },
+  // components: { MyPaginator, MySelect },
   props: {
     producers: {
       type: Array,
@@ -46,8 +42,9 @@ export default {
     total: {
       type: Number,
       required: true
-    }}
-/*
+    }
+  }
+  /*
     countPerPage: {
       type: Number,
       required: true

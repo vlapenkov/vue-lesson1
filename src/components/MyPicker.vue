@@ -35,7 +35,6 @@ export default {
   },
   watch: {
     localValue: function(newValue) {
-
       this.$emit("input", newValue);
     }
   },

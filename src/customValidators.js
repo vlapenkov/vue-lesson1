@@ -1,6 +1,6 @@
 import { Validator } from "vee-validate";
 
-const emailsDB = ["logaretm1@gmail.com","vlapenkov@ya.ru"];
+const emailsDB = ["logaretm1@gmail.com", "vlapenkov@ya.ru"];
 
 export function uniqueValidate() {
   Validator.extend("unique", {
@@ -24,5 +24,3 @@ export function uniqueValidate() {
     getMessage: (field, params, data) => data.message
   });
 }
-
-
