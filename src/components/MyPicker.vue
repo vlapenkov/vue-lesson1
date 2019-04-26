@@ -35,7 +35,7 @@ export default {
   },
   watch: {
     localValue: function(newValue) {
-      debugger;
+
       this.$emit("input", newValue);
     }
   },

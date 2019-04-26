@@ -141,6 +141,22 @@
       "address": "",
       "about": "",
       "registered": "26.04.2019"
+    },
+    {
+      "id": 11,
+      "isActive": true,
+      "balance": "",
+      "picture": "",
+      "age": 0,
+      "accessLevel": "admin",
+      "firstName": "Иванов",
+      "lastName": "",
+      "company": "<p><strong><em>Иванов</em></strong></p>",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "about": "",
+      "registered": "10.04.2019"
     }
   ]
 }

@@ -6,8 +6,8 @@
         <a
           href="#"
           class="page-link"
-          aria-label="Previous"
-          @click.prevent="prevPage"
+          aria-label="First"
+          @click.prevent="setPage(1)"
         >
           <span aria-hidden="true">&laquo;</span>
         </a>
@@ -17,8 +17,19 @@
         :key="item"
         class="page-item"
         :class="{ active: activePage === item }"
+        v-show="showCriteria(item)"
       >
         <a class="page-link" @click="setPage(item)">{{ item }}</a>
+      </li>
+      <li class="page-item" :class="{ disabled: activePage === numOfButtons }">
+        <a
+          href="#"
+          class="page-link"
+          aria-label="Last"
+          @click.prevent="setPage(numOfButtons)"
+        >
+          <span aria-hidden="true">&raquo;</span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -46,8 +57,12 @@ export default {
     this.setPage(1);
   }}, */
   computed: {
-    numOfButtons: function() {
+    numOfButtons() {
       return Math.ceil(this.total / this.countPerPage);
+    },
+    showCriteria()
+    {
+      return number => [1,this.numOfButtons,this.activePage,this.activePage-1,this.activePage+1].some(x=>x==number)
     }
   },
   methods: {
@@ -73,3 +88,10 @@ export default {
   }
 };
 </script>
+<style>
+.page-item
+{
+  cursor:pointer;
+}
+</style>
+>

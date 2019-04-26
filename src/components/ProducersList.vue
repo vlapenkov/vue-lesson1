@@ -25,27 +25,19 @@
         </tr>
       </tfoot>
     </table>
-    <my-select
-      :value="countPerPage"
-      @input="value => $emit('count', value)"
-      :countPerPageArray="[5, 10, 50, 100]"
-    ></my-select>
-    <my-paginator
-      :total="total"
-      :countPerPage="countPerPage"
-      :activePage="activePage"
-      @input="value => $emit('input', value)"
-    ></my-paginator>
+
+
   </div>
 </template>
 
 <script>
-import MyPaginator from "@/components/MyPaginator.vue";
-import MySelect from "@/components/MySelect.vue";
+//import MyPaginator from "@/components/MyPaginator.vue";
+//import MySelect from "@/components/MySelect.vue";
+//import MySearch from "@/components/MySearch.vue";
 
 export default {
   name: "producers-list",
-  components: { MyPaginator, MySelect },
+ // components: { MyPaginator, MySelect },
   props: {
     producers: {
       type: Array,
@@ -54,7 +46,8 @@ export default {
     total: {
       type: Number,
       required: true
-    },
+    }}
+/*
     countPerPage: {
       type: Number,
       required: true
@@ -63,6 +56,6 @@ export default {
       type: Number,
       required: true
     }
-  }
+  }*/
 };
 </script>
