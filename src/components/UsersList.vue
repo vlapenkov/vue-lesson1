@@ -1,5 +1,6 @@
 <template>
   <div>
+    <slot name="header"></slot>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -17,9 +18,7 @@
       <tbody>
         <tr v-for="item in listOnPage" :key="item.id">
           <td>
-            <router-link :to="'/edit/' + item.id">
-              # {{ item.id }}
-            </router-link>
+            <router-link :to="'/edit/' + item.id"> # {{ item.id }} </router-link>
           </td>
           <td>{{ item.firstName }}</td>
           <td>{{ item.lastName }}</td>
@@ -37,10 +36,7 @@
         </tr>
       </tfoot>
     </table>
-    <my-select
-      v-model.number="countPerPage"
-      :countPerPageArray="[5, 10, 50, 100]"
-    ></my-select>
+    <my-select v-model.number="countPerPage" :countPerPageArray="[5, 10, 50, 100]"></my-select>
     <my-paginator
       :total="userslist.length"
       :countPerPage="countPerPage"

@@ -19,7 +19,7 @@ export function uniqueValidate() {
               message: `${value} is already taken.`
             }
           });
-        }, 200);
+        }, 2000);
       }),
     getMessage: (field, params, data) => data.message
   });

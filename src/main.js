@@ -10,10 +10,9 @@ import { uniqueValidate } from "./customValidators";
 
 Vue.config.productionTip = false;
 
-/*
-import Vuetify from 'vuetify'
+import Vuetify from "vuetify";
 
-Vue.use(Vuetify) */
+Vue.use(Vuetify);
 
 Vue.use(VeeValidate);
 

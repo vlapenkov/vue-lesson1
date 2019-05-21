@@ -53,7 +53,7 @@
       <label>Адрес</label>
       <input
         type="text"
-        v-validate="'required|email|unique'"
+        v-validate="'unique'"
         name="address"
         class="form-control"
         v-model="localUser.address"

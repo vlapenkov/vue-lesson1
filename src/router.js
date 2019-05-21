@@ -5,6 +5,7 @@ import Users from "./views/Users.vue";
 import AddUser from "./views/AddUser.vue";
 import EditUser from "./views/Edit.vue";
 import Producers from "./views/Producers";
+import axios from "axios";
 
 Vue.use(Router);
 
@@ -27,7 +28,20 @@ export default new Router({
     {
       path: "/users",
       name: "users",
-      component: Users
+      component: Users,
+      beforeEnter: (to, from, next) => {
+        // проверяем можем ли идти на маршрут. Если идем, то сразу загружаем пользователей
+        axios
+          .get("http://localhost:3004/users")
+          .then(response => {
+            console.log("got users");
+            next(vm => (vm.usersList = response.data));
+          })
+          .catch(() => {
+            console.log("ERROR!");
+            next(false);
+          });
+      }
     },
     {
       path: "/producers",
