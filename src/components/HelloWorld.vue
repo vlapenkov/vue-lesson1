@@ -110,6 +110,8 @@
 
 <script>
 import { exampleMixin } from "./exampleMixin.js";
+
+
 export default {
   mixins: [exampleMixin],
   name: "HelloWorld",
